@@ -50,7 +50,7 @@ void quicksort(int *array, int low, int high, size_t size)
 
 		// Sort the two partitions
 		quicksort(array, low, pivot - 1, size);  // Left side of pivot
-		quicksort(array, pivot + 1, high, size); // Right side of pivot
+		quicksort(array, pivot + 1, high,); // Right side of pivot
 	}
 	print_array(array, size);
 }
