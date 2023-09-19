@@ -38,7 +38,7 @@ void insertion_sort_list(listint_t **list)
 
             actual->next = temp->next;
             actual->prev = temp;
-			
+
             if (temp->next != NULL)
                 temp->next->prev = actual;
             temp->next = actual;
@@ -47,6 +47,7 @@ void insertion_sort_list(listint_t **list)
             *list = actual;
 
         print_list(head);
+		printf("\n");
         actual = next;
     }
 }
